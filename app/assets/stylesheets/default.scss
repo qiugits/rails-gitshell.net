@@ -1,0 +1,40 @@
+//変数
+$col_main: #222;
+$col_highlight: #bbb;
+
+
+body{
+  background-color: $col_main;
+  color: $col_highlight;
+}
+img {
+  pointer-events: none; //右クリック禁止して画像コピーできなくする
+}
+img#fox { //#でidを指定
+  display: block; //これがないとmargin指定できないぽい？
+  margin: auto; //左右中央にする | http://stackoverflow.com/questions/7055393/center-image-using-text-align-center
+
+  max-width: 60%;
+  max-height: 70%;
+  //margin-top: 15%;
+
+  position: sticky;
+}
+.footer {
+  width: 100%;
+  height: 80px;
+  background: black; //? background-color?
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  display: inline-block; //?
+}
+img#twitter {
+  float: right;
+  height: 40px;
+  width: auto;
+  margin: 20px;
+}
+@media screen and (max-width: 750px) {
+  body{color: orange;}
+}
