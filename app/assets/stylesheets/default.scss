@@ -2,10 +2,12 @@
 $col_main: #222;
 $col_highlight: #bbb;
 $font_basic: 20px;
-$footer_height: 5rem;
+$footer_height: 4em;
+
 
 html{
   font-size: $font_basic;
+  -webkit-text-size-adjust: 100%;
 }
 body{
   background-color: $col_main;
@@ -14,7 +16,7 @@ body{
 img {
   pointer-events: none; //右クリック禁止して画像コピーできなくする
 }
-img#fox { //#でidを指定
+img#fox {
   max-width: 60%;
   max-height: 70%;
 
@@ -25,7 +27,6 @@ img#fox { //#でidを指定
   left: 0;
   right: 0;
   margin: auto; //左右中央にする | http://stackoverflow.com/questions/7055393/center-image-using-text-align-center
-  //display: block; //これがないとmargin指定できないぽい？
 }
 .footer {
   width: 100%;
@@ -42,6 +43,7 @@ img#twitter {
   width: auto;
   margin: ($footer_height * 1 / 4);
 }
-@media screen and (max-width: 750px) {
-  body{color: orange;}
+@media (max-width: 1126px) {
+  html{font-size: (3 * $font_basic)}
+  body{color: brown;}
 }
