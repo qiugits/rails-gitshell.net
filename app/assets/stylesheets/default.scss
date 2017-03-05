@@ -1,13 +1,19 @@
 //変数
 $col_main: #222;
 $col_highlight: #bbb;
-$font_basic: 20px;
+$font_basic: calc(16px + 0.5vh);
 $footer_height: 4em;
 
 
 html{
   font-size: $font_basic;
   -webkit-text-size-adjust: 100%;
+
+  //for iPhone. 上書きをするために、これは下に置かなければならない
+  @media (max-width: 1126px) {
+    //font-size: (2 * $font_basic);
+    color: brown;
+  }
 }
 body{
   background-color: $col_main;
@@ -42,8 +48,4 @@ img#twitter {
   height: ($footer_height * 1 / 2);
   width: auto;
   margin: ($footer_height * 1 / 4);
-}
-@media (max-width: 1126px) {
-  html{font-size: (3 * $font_basic)}
-  body{color: brown;}
 }
