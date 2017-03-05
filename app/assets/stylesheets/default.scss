@@ -1,28 +1,38 @@
 //変数
 $col_main: #222;
 $col_highlight: #bbb;
-$font_basic: calc(16px + 0.5vh);
-$footer_height: 4em;
+$font_basic: 125%;
+$footer_height: 4rem;
 
 
-html{
-  font-size: $font_basic;
+html {
+  //font-size: $font_basic;
+  font-size: calc(100% + 0.5vmax);
   -webkit-text-size-adjust: 100%;
 
-  //for iPhone. 上書きをするために、これは下に置かなければならない
-  @media (max-width: 1126px) {
-    //font-size: (2 * $font_basic);
-    color: brown;
-  }
-}
-body{
   background-color: $col_main;
   color: $col_highlight;
+
+  //for iPhone.
+  @media (max-width: 1126px) {
+    //font-size: (2 * $font_basic);
+    font-size: calc(150% + 1vmax);
+    color: blue;
+  }
 }
-img {
-  pointer-events: none; //右クリック禁止して画像コピーできなくする
+body {
+  /*
+  background-image: url("fox.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  */
 }
-img#fox {
+img {}
+div#fox {
+  background-image: url("fox.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   max-width: 60%;
   max-height: 70%;
 
@@ -33,6 +43,10 @@ img#fox {
   left: 0;
   right: 0;
   margin: auto; //左右中央にする | http://stackoverflow.com/questions/7055393/center-image-using-text-align-center
+
+
+  //pointer-events: none; //右クリック禁止して画像コピーできなくする
+  z-index: -1; //下層へ。
 }
 .footer {
   width: 100%;
@@ -43,9 +57,13 @@ img#fox {
   position: absolute;
   display: inline-block; //?
 }
-img#twitter {
+a#twitter {
+  background-image: url("twitter.png");
+  display: inline-block; //これがないと<a>ではちゃんと表示されない。
+  background-size: contain;
   float: right;
   height: ($footer_height * 1 / 2);
-  width: auto;
+  width: ($footer_height * 1 / 2);
   margin: ($footer_height * 1 / 4);
+  cursor: pointer;
 }
