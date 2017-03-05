@@ -1,9 +1,12 @@
 //変数
 $col_main: #222;
 $col_highlight: #bbb;
-$footer_height: 100px;
+$font_basic: 20px;
+$footer_height: 5rem;
 
-
+html{
+  font-size: $font_basic;
+}
 body{
   background-color: $col_main;
   color: $col_highlight;
