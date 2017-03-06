@@ -1,7 +1,8 @@
 //変数
-$col_main: #bbbbbb;
+$col_main: #cccccc;
 $col_highlight: #f2b43b;
-$col_background: #262626;
+$col_background: #292929;
+$col_dark: #191919;
 $font_basic: 125%;
 $footer_height: 4rem;
 
@@ -16,7 +17,7 @@ html {
 
   //for iPhone.
   @media (max-width: 1126px) {
-    //font-size: (2 * $font_basic);
+    //font-size: calc(2 * $font_basic);
     font-size: calc(150% + 1vmax);
     color: blue;
   }
@@ -38,7 +39,7 @@ div#fox {
   max-height: 70%;
 
   //上下左右中央にする
-  position: absolute;
+  position: absolute; //absolute <-> fixed
   top: 0;
   bottom: $footer_height;
   left: 0;
@@ -52,12 +53,17 @@ div#fox {
 .footer {
   width: 100%;
   height: $footer_height;
-  background: rgba(0,0,0,0.3); //? background-color?
-  //opacity: 0.3; これだと上の文字まで透過してしまう
+  //Safari,ChromeにはWebkitで、Firefoxにはmoz、それ以外にはグラデーションなしを表示する
+  background: rgba($col_dark,0.8); //? background-color?
+  background: -moz-linear-gradient(top,
+                                    rgba($col_dark,0.85),
+                                    rgba($col_dark - #080808,0.95));
+  background: -webkit-gradient(linear,left top,left bottom,
+                                    from(rgba($col_dark,0.85)),
+                                    to(rgba($col_dark - #080808,0.95)));
   left: 0;
   bottom: 0;
   position: fixed; //absoluteだと読み込み時の画面にしたがって完全固定だが、fixedならスクロールに対応する
-  //display: inline-block; //?
 }
 ul {
   list-style-type: none;
@@ -96,5 +102,5 @@ a#twitter:hover,a#twitter:active {
   background-image: url("twitter.png");
 }
 a.button_txt {
-  padding-left: 2rem;
+  margin-left: 2rem;
 }
