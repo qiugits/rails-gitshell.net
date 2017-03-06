@@ -1,6 +1,7 @@
 //変数
-$col_main: #222;
-$col_highlight: #bbb;
+$col_main: #bbbbbb;
+$col_highlight: #f2b43b;
+$col_background: #262626;
 $font_basic: 125%;
 $footer_height: 4rem;
 
@@ -10,8 +11,8 @@ html {
   font-size: calc(100% + 0.5vmax);
   -webkit-text-size-adjust: 100%;
 
-  background-color: $col_main;
-  color: $col_highlight;
+  background-color: $col_background;
+  color: $col_main;
 
   //for iPhone.
   @media (max-width: 1126px) {
@@ -33,7 +34,7 @@ div#fox {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 60%;
+  max-width: 80%;
   max-height: 70%;
 
   //上下左右中央にする
@@ -51,19 +52,49 @@ div#fox {
 .footer {
   width: 100%;
   height: $footer_height;
-  background: black; //? background-color?
+  background: rgba(0,0,0,0.3); //? background-color?
+  //opacity: 0.3; これだと上の文字まで透過してしまう
   left: 0;
   bottom: 0;
-  position: absolute;
-  display: inline-block; //?
+  position: fixed; //absoluteだと読み込み時の画面にしたがって完全固定だが、fixedならスクロールに対応する
+  //display: inline-block; //?
 }
-a#twitter {
-  background-image: url("twitter.png");
-  display: inline-block; //これがないと<a>ではちゃんと表示されない。
+ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+ul.pull-left {
+  float: left !important;
+}
+ul.pull-right {
+  float: right !important;
+}
+.footer > ul {
+  line-height: $footer_height;
+}
+a {
+  text-decoration: none; //リンク文字列のアンダーラインなし
+  color: $col_main;
+}
+a:hover,a:active {
+  color: $col_highlight;
+}
+a.button_img {
+  display: flex; //これがないと<a>ではちゃんと表示されない。inline-blockでもうまくいった。
   background-size: contain;
-  float: right;
   height: ($footer_height * 1 / 2);
   width: ($footer_height * 1 / 2);
   margin: ($footer_height * 1 / 4);
   cursor: pointer;
+}
+a#twitter {
+  background-image: url("twitter_w.png");
+}
+a#twitter:hover,a#twitter:active {
+  background-image: url("twitter.png");
+}
+a.button_txt {
+  padding-left: 2rem;
 }
