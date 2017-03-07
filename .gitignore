@@ -24,4 +24,5 @@
 
 #qiu's edit
 public/assets/
+#   .DS_StoreはMac固有のファインダー用隠しファイル。
 .DS_Store
