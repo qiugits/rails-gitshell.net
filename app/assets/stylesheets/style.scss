@@ -8,6 +8,14 @@ $footer_height: 4rem;
 
 
 html {
+  font-family:  //assets/fontsに入れていないので、端末依存かな。
+                avenir next,
+                avenir,
+                //scaffoldを丸パクリ。
+                verdana,
+                arial,
+                helvetica,
+                sans-serif;
   //font-size: $font_basic;
   font-size: calc(100% + 0.5vmax);
   -webkit-text-size-adjust: 100%;
@@ -24,9 +32,9 @@ html {
 }
 body {
   /*
-  background-image: url("fox.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
   */
 }
 img {}
@@ -48,6 +56,26 @@ div#fox {
 
   //pointer-events: none; //右クリック禁止して画像コピーできなくする
   z-index: -1; //下層へ。
+}
+.text_box{
+  width: 80%;
+  height: 70%;
+
+  //上下左右中央にする
+  position: absolute; //absolute <-> fixed
+  top: 0;
+  bottom: $footer_height;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: table;
+  //vertical-align: middle;
+  //text-align: center;
+}
+.text_box p{
+  display: table-cell;
+  vertical-align: middle !important;
+  text-align: center;
 }
 .footer {
   width: 100%;
@@ -97,9 +125,6 @@ a#twitter:hover,a#twitter:active {
   margin-left: 1.5rem;
 }
 /* 文字 */
-p {
-  text-align: center;
-}
 a {
   text-decoration: none; //リンク文字列のアンダーラインなし
   color: $col_main;
