@@ -57,26 +57,33 @@ div#fox {
   //pointer-events: none; //右クリック禁止して画像コピーできなくする
   z-index: -1; //下層へ。
 }
+///*
 .text_box{
   width: 80%;
   height: 70%;
-
-  //上下左右中央にする
-  position: absolute; //absolute <-> fixed
+  position: absolute; //absolute(スクロール可能) <-> fixed(スクロール不可)
   top: 0;
   bottom: $footer_height;
   left: 0;
   right: 0;
   margin: auto;
   display: table;
-  //vertical-align: middle;
-  //text-align: center;
 }
-.text_box p{
+.text_box > div{
   display: table-cell;
-  vertical-align: middle !important;
+  vertical-align: middle;
   text-align: center;
 }
+//*/
+
+/*
+.text_box{
+  display: flex;
+}
+.text_box p{
+  display: flex;
+}
+*/
 .footer {
   width: 100%;
   height: $footer_height;
