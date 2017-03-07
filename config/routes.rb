@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
-  #get 'profiles/index'
-
-  get 'test/index'
-  get 'test' => 'test#index'
+  get 'profiles/info'
+  get 'info' => 'profiles#info'
 
   get 'profiles' => 'profiles#index'
   resources :profiles
