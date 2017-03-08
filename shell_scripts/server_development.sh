@@ -1,11 +1,6 @@
 #!/bin/sh
 cd /Users/qiu/workspace/qiu.jp
 pwd
-echo "////////////////////////////////////////"
-echo " * restart mysql "
-mysql.server restart
-echo "////////////////////////////////////////"
-
 #echo "x restart apache"
 #apachectl restart
 echo "////////////////////////////////////////"
