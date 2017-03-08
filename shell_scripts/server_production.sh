@@ -12,7 +12,7 @@ echo "////////////////////////////////////////"
 echo " * restart unicorn.rb"
 echo "  - stop unicorn"
 kill -QUIT `cat ~/workspace/qiu.jp/tmp/pids/unicorn.pid`
-kill -QUIT `cat ~/workspace/qiu.jp/tmp/unicorn.pid` #どちらの場合も想定して置く
+#kill -QUIT `cat ~/workspace/qiu.jp/tmp/unicorn.pid` #どちらの場合も想定して置く
 echo "  - start unicorn as daemon"
 #echo "development"
 #unicorn_rails -c ~/workspace/qiu.jp/config/unicorn.rb -E development -D
