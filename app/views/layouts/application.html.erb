@@ -3,13 +3,14 @@
   <head>
     <title>Qiu</title>
     <%= csrf_meta_tags %>
-    <% if Rails.env.production? %>
-      <%= analytics_init if GoogleAnalytics.valid_tracker? #developmentの場合、GoogleAnalytics.valid_tracker?がそもそもエラーになるため、if文の条件を並行して書けない %>
-    <% end %>
     <%= favicon_link_tag 'favicon.ico' %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <% if Rails.env.production? then %>
+      <%= analytics_init if GoogleAnalytics.valid_tracker? %>
+    <% end %>
   </head>
 
   <body>
