@@ -5,7 +5,8 @@ rails_root = File.expand_path('../../', __FILE__) #=> "/Users/qiu/workspace/qiu.
 worker_processes 2
 working_directory rails_root
 
-listen "#{rails_root}/tmp/sockets/unicorn.sock" #？？「Unicornのプロセスをlistenするアドレストポートを指定」らしいが…
+#listen "#{rails_root}/tmp/unicorn.sock" #？？「Unicornのプロセスをlistenするアドレストポートを指定」らしいが…
+listen 3000
 pid "#{rails_root}/tmp/pids/unicorn.pid" #pid fileの位置を指定する
 
 #ログの出力先を指定
