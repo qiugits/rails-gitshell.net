@@ -9,6 +9,11 @@ end
 #qiu's edit
 #install unicorn
 gem 'unicorn'
+# production only
+group :production do
+  #install Google Analytics
+  gem 'google-analytics-rails', '1.1.0'
+end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
