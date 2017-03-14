@@ -1,4 +1,5 @@
 /* 変数 */
+/*
 $col_main: #cccccc;
 $col_highlight: #f2b43b;
 $col_background: #292929;
@@ -23,7 +24,7 @@ html {
   background-color: $col_background;
   color: $col_main;
 
-  /* for iPhone. */
+  // for iPhone.
   @media (max-width: 1126px) {
     //font-size: calc(2 * $font_basic);
     font-size: calc(150% + 1vmax);
@@ -31,11 +32,6 @@ html {
   }
 }
 body {
-  /*
-  height: 100%;
-  margin-top: 0;
-  margin-bottom: 0;
-  */
 }
 img {}
 div#fox {
@@ -57,7 +53,7 @@ div#fox {
   //pointer-events: none; //右クリック禁止して画像コピーできなくする
   z-index: -1; //下層へ。
 }
-///*
+
 .text_box{
   width: 80%;
   height: 70%;
@@ -74,16 +70,8 @@ div#fox {
   vertical-align: middle;
   text-align: center;
 }
-//*/
 
-/*
-.text_box{
-  display: flex;
-}
-.text_box p{
-  display: flex;
-}
-*/
+
 .footer {
   width: 100%;
   height: $footer_height;
@@ -131,7 +119,7 @@ a#twitter:hover,a#twitter:active {
 .footer a.button_txt {
   margin-left: 1.5rem;
 }
-/* 文字 */
+// 文字
 a {
   text-decoration: none; //リンク文字列のアンダーラインなし
   color: $col_main;
@@ -139,3 +127,4 @@ a {
 a:hover,a:active {
   color: $col_highlight;
 }
+*/
