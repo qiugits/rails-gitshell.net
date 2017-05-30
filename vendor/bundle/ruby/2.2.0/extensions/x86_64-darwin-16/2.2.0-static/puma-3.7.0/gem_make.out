@@ -1,4 +1,4 @@
-/Users/qiu/.rbenv/versions/2.2.3/bin/ruby -r ./siteconf20170219-72506-1fnw5s7.rb extconf.rb 
+/Users/qiushi/.rbenv/versions/2.2.3/bin/ruby -r ./siteconf20170530-4439-1fptsmw.rb extconf.rb
 checking for BIO_read() in -lcrypto... yes
 checking for SSL_CTX_new() in -lssl... yes
 checking for openssl/bio.h... yes
@@ -14,4 +14,4 @@ compiling puma_http11.c
 linking shared-object puma/puma_http11.bundle
 
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 puma_http11.bundle ./.gem.20170219-72506-1meko0u/puma
+/usr/bin/install -c -m 0755 puma_http11.bundle ./.gem.20170530-4439-1k8q43l/puma

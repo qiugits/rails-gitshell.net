@@ -1,63 +1,7 @@
-/Users/qiu/.rbenv/versions/2.2.3/bin/ruby -r ./siteconf20170219-72506-c9989d.rb extconf.rb 
+/Users/qiushi/.rbenv/versions/2.2.3/bin/ruby -r ./siteconf20170530-12921-17wc082.rb extconf.rb --use-system-libraries
 checking if the C compiler accepts ... yes
 checking if the C compiler accepts -Wno-error=unused-command-line-argument-hard-error-in-future... no
-Building nokogiri using packaged libraries.
-Using mini_portile version 2.1.0
-checking for iconv.h... yes
-checking for gzdopen() in -lz... yes
-checking for iconv... yes
-************************************************************************
-IMPORTANT NOTICE:
-
-Building Nokogiri with a packaged version of libxml2-2.9.4.
-
-Team Nokogiri will keep on doing their best to provide security
-updates in a timely manner, but if this is a concern for you and want
-to use the system library instead; abort this installation process and
-reinstall nokogiri as follows:
-
-    gem install nokogiri -- --use-system-libraries
-        [--with-xml2-config=/path/to/xml2-config]
-        [--with-xslt-config=/path/to/xslt-config]
-
-If you are using Bundler, tell it to use the option:
-
-    bundle config build.nokogiri --use-system-libraries
-    bundle install
-
-Note, however, that nokogiri is not fully compatible with arbitrary
-versions of libxml2 provided by OS/package vendors.
-************************************************************************
-Extracting libxml2-2.9.4.tar.gz into tmp/x86_64-apple-darwin16.4.0/ports/libxml2/2.9.4... OK
-Running 'configure' for libxml2 2.9.4... OK
-Running 'compile' for libxml2 2.9.4... OK
-Running 'install' for libxml2 2.9.4... OK
-Activating libxml2 2.9.4 (from /Users/qiu/workspace/qiu.jp/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.7.0.1/ports/x86_64-apple-darwin16.4.0/libxml2/2.9.4)...
-************************************************************************
-IMPORTANT NOTICE:
-
-Building Nokogiri with a packaged version of libxslt-1.1.29.
-
-Team Nokogiri will keep on doing their best to provide security
-updates in a timely manner, but if this is a concern for you and want
-to use the system library instead; abort this installation process and
-reinstall nokogiri as follows:
-
-    gem install nokogiri -- --use-system-libraries
-        [--with-xml2-config=/path/to/xml2-config]
-        [--with-xslt-config=/path/to/xslt-config]
-
-If you are using Bundler, tell it to use the option:
-
-    bundle config build.nokogiri --use-system-libraries
-    bundle install
-************************************************************************
-Extracting libxslt-1.1.29.tar.gz into tmp/x86_64-apple-darwin16.4.0/ports/libxslt/1.1.29... OK
-Running 'configure' for libxslt 1.1.29... OK
-Running 'compile' for libxslt 1.1.29... OK
-Running 'install' for libxslt 1.1.29... OK
-Activating libxslt 1.1.29 (from /Users/qiu/workspace/qiu.jp/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.7.0.1/ports/x86_64-apple-darwin16.4.0/libxslt/1.1.29)...
-checking for main() in -llzma... yes
+Building nokogiri using system libraries.
 checking for xmlParseDoc() in libxml/parser.h... yes
 checking for xsltParseStylesheetDoc() in libxslt/xslt.h... yes
 checking for exsltFuncRegister() in libexslt/exslt.h... yes
@@ -130,26 +74,27 @@ compiling xslt_stylesheet.c
 xslt_stylesheet.c:217:21: warning: incompatible pointer to integer conversion passing 'void *' to parameter of type 'VALUE' (aka 'unsigned long') [-Wint-conversion]
     Data_Get_Struct(ctxt->style->_private, nokogiriXsltStylesheetTuple,
                     ^~~~~~~~~~~~~~~~~~~~~
-/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/ruby.h:1044:41: note: expanded from macro 'Data_Get_Struct'
+/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/ruby.h:1044:41: note: expanded from macro 'Data_Get_Struct'
     ((sval) = (type*)rb_data_object_get(obj))
                                         ^~~
-/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/ruby.h:1189:26: note: passing argument to parameter 'obj' here
+/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/ruby.h:1189:26: note: passing argument to parameter 'obj' here
 rb_data_object_get(VALUE obj)
                          ^
 xslt_stylesheet.c:230:21: warning: incompatible pointer to integer conversion passing 'void *' to parameter of type 'VALUE' (aka 'unsigned long') [-Wint-conversion]
     Data_Get_Struct(ctxt->style->_private, nokogiriXsltStylesheetTuple,
                     ^~~~~~~~~~~~~~~~~~~~~
-/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/ruby.h:1044:41: note: expanded from macro 'Data_Get_Struct'
+/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/ruby.h:1044:41: note: expanded from macro 'Data_Get_Struct'
     ((sval) = (type*)rb_data_object_get(obj))
                                         ^~~
-/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/ruby.h:1189:26: note: passing argument to parameter 'obj' here
+/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/ruby.h:1189:26: note: passing argument to parameter 'obj' here
 rb_data_object_get(VALUE obj)
                          ^
 2 warnings generated.
 linking shared-object nokogiri/nokogiri.bundle
+ld: warning: directory not found for option '-L/usr/local/Cellar/libxml2/2.9.4/lib'
+ld: warning: directory not found for option '-L/usr/local/Cellar/libxml2/2.9.4/lib'
 Cleaning files only used during build.
-rm -rf /Users/qiu/workspace/qiu.jp/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.7.0.1/ext/nokogiri/tmp/x86_64-apple-darwin16.4.0/ports
-rm -rf /Users/qiu/workspace/qiu.jp/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.7.0.1/ports
+rm -rf /Users/qiushi/workspace/qiu.jp/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.7.0.1/ports/archives
 
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 nokogiri.bundle ./.gem.20170219-72506-wrfp4v/nokogiri
+/usr/bin/install -c -m 0755 nokogiri.bundle ./.gem.20170530-12921-1jqztkz/nokogiri

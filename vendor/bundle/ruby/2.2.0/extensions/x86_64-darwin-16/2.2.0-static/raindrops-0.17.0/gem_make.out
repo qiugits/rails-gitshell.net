@@ -1,4 +1,4 @@
-/Users/qiu/.rbenv/versions/2.2.3/bin/ruby -r ./siteconf20170219-72506-1e52ujv.rb extconf.rb 
+/Users/qiushi/.rbenv/versions/2.2.3/bin/ruby -r ./siteconf20170530-4439-1gd5woh.rb extconf.rb
 checking for mmap() in sys/mman.h... yes
 checking for munmap() in sys/mman.h... yes
 checking for mremap() in sys/mman.h... no
@@ -18,4 +18,4 @@ compiling raindrops.c
 linking shared-object raindrops_ext.bundle
 
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 raindrops_ext.bundle ./.gem.20170219-72506-mmuk4s
+/usr/bin/install -c -m 0755 raindrops_ext.bundle ./.gem.20170530-4439-nktsks

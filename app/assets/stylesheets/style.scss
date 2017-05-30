@@ -6,6 +6,8 @@ $col_background: #292929;
 $col_dark: #191919;
 $font_basic: 125%;
 $footer_height: 4rem;
+$header_height: 4rem;
+$maple_size: $header_height / 1.5;
 
 
 html {
@@ -116,12 +118,6 @@ div#fox {
   margin: ($footer_height * 1 / 4);
   cursor: pointer;
 }
-a#twitter {
-  background-image: url("twitter_w.png");
-}
-a#twitter:hover,a#twitter:active {
-  background-image: url("twitter.png");
-}
 .footer a.button_txt {
   margin-left: 1.5rem;
 }
@@ -132,4 +128,61 @@ a {
 }
 a:hover,a:active {
   color: $col_highlight;
+}
+
+// ******************
+// ***   HEADER   ***
+// ******************
+.header{
+  position: absolute;
+  height: $header_height;
+  width: 99%;
+  z-index: 1;
+  margin: 0;
+}
+#acMenu{
+  float: right;
+  margin: 0;
+  margin-right: 0.5rem;
+}
+/* slideToggle */
+#acMenu dt{
+    display:block;
+    margin-left: auto;
+    width:$maple_size;
+    height:$maple_size/2;
+    cursor:pointer;
+}
+#acMenu dd{
+    color: $col_main;
+    width:32rem;
+    height:1.2rem;
+    line-height:2rem;
+    text-align:right;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    padding-right: 1rem;
+    display:none;
+    // margin: 0;
+}
+img#Upper{
+  // background-image: url('Maple_Upper.png');
+  width: $maple_size;
+  height: $maple_size;
+}
+img#Lower{
+  // background-image: url('Maple_Lower.png');
+  width: $maple_size;
+  height: $maple_size;
+  margin-top: -$maple_size / 2;
+  /*padding-top: -32px;*/
+  // z-index: -2;
+}
+img{
+  /* disable saving img w/smartphone */
+  touch-callout:none;
+  user-select:none;
+  /* w/pc */
+  pointer-events: none;
 }

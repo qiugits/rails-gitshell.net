@@ -1,0 +1,19 @@
+<div class="header">
+  <!-- make this stay on the top. then let dlMaple go to right hand. -->
+  <script>
+  $(function(){
+    $("#acMenu dt").on("click", function() {
+      // $(this).next().slideToggle(85);
+      $('#acMenu dd').slideToggle('fast');
+    });
+  });
+  </script>
+  <dl id="acMenu">
+    <dt id="Upper"><%= image_tag('Maple_Upper.png', id:'Upper') %></dt>
+    <!-- <dd></dd> -->
+    <dd>home</dd>
+    <dd>info</dd>
+    <!-- <dd></dd> -->
+    <dt id="Lower"><%= image_tag('Maple_Lower.png', id:'Lower') %></dt>
+  </dl>
+</div>

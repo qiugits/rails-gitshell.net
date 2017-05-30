@@ -1,4 +1,4 @@
-/Users/qiu/.rbenv/versions/2.2.3/bin/ruby -r ./siteconf20170219-72506-15raeh8.rb extconf.rb 
+/Users/qiushi/.rbenv/versions/2.2.3/bin/ruby -r ./siteconf20170530-4439-1g5j0rj.rb extconf.rb
 checking for SIZEOF_OFF_T in ruby.h... yes
 checking for SIZEOF_SIZE_T in ruby.h... yes
 checking for SIZEOF_LONG in ruby.h... yes
@@ -15,4 +15,4 @@ compiling unicorn_http.c
 linking shared-object unicorn_http.bundle
 
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 unicorn_http.bundle ./.gem.20170219-72506-1wm3n3
+/usr/bin/install -c -m 0755 unicorn_http.bundle ./.gem.20170530-4439-77f86c

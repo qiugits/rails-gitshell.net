@@ -11,9 +11,11 @@
     <% if Rails.env.production? then %>
       <%= analytics_init if GoogleAnalytics.valid_tracker? %>
     <% end %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type='text/javascript'></script>
   </head>
 
   <body>
+    <%= render :partial=>'layouts/header' %>
     <%= yield %>
   </body>
 </html>

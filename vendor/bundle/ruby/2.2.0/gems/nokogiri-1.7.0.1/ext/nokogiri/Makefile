@@ -12,12 +12,12 @@ NULLCMD = :
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0
+topdir = /Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0
 hdrdir = $(topdir)
-arch_hdrdir = /Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16
+arch_hdrdir = /Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16
 PATH_SEPARATOR = :
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
-prefix = $(DESTDIR)/Users/qiu/.rbenv/versions/2.2.3
+prefix = $(DESTDIR)/Users/qiushi/.rbenv/versions/2.2.3
 rubysitearchprefix = $(rubylibprefix)/$(sitearch)
 rubyarchprefix = $(rubylibprefix)/$(arch)
 rubylibprefix = $(libdir)/$(RUBY_BASE_NAME)
@@ -31,8 +31,8 @@ rubyhdrdir = $(includedir)/$(RUBY_VERSION_NAME)
 vendorarchdir = $(vendorlibdir)/$(sitearch)
 vendorlibdir = $(vendordir)/$(ruby_version)
 vendordir = $(rubylibprefix)/vendor_ruby
-sitearchdir = $(DESTDIR)./.gem.20170219-72506-wrfp4v
-sitelibdir = $(DESTDIR)./.gem.20170219-72506-wrfp4v
+sitearchdir = $(DESTDIR)./.gem.20170530-12921-1jqztkz
+sitelibdir = $(DESTDIR)./.gem.20170530-12921-1jqztkz
 sitedir = $(rubylibprefix)/site_ruby
 rubyarchdir = $(rubylibdir)/$(arch)
 rubylibdir = $(rubylibprefix)/$(ruby_version)
@@ -79,12 +79,12 @@ optflags = -O3 -fno-fast-math
 debugflags = -ggdb3
 warnflags = -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wunused-variable -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens
 CCDLFLAGS = -fno-common
-CFLAGS   = $(CCDLFLAGS)  -O3 -Wno-error=shorten-64-to-32  -pipe  -DNOKOGIRI_USE_PACKAGED_LIBRARIES $(ARCH_FLAG)
-INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir)
+CFLAGS   = $(CCDLFLAGS)  -O3 -Wno-error=shorten-64-to-32  -pipe     $(ARCH_FLAG)
+INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir) -I/usr/local/Cellar/libxml2/2.9.4_3/include/libxml2 -I/usr/local/Cellar/libxslt/1.1.29/include -I/usr/local/Cellar/libxml2/2.9.4_3/include/libxml2 -I/usr/local/Cellar/libxslt/1.1.29/include -I/usr/local/Cellar/libxml2/2.9.4_3/include/libxml2
 DEFS     = 
-CPPFLAGS = -DHAVE_ICONV_H -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -I/Users/qiu/workspace/qiu.jp/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.7.0.1/ports/x86_64-apple-darwin16.4.0/libxslt/1.1.29/include -I/Users/qiu/workspace/qiu.jp/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.7.0.1/ports/x86_64-apple-darwin16.4.0/libxml2/2.9.4/include/libxml2 -I/Users/qiu/workspace/qiu.jp/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.7.0.1/ports/x86_64-apple-darwin16.4.0/libxml2/2.9.4/include/libxml2 -I/Users/qiu/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags) "-DNOKOGIRI_LIBXML2_PATH=\"/Users/qiu/workspace/qiu.jp/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.7.0.1/ports/x86_64-apple-darwin16.4.0/libxml2/2.9.4\"" "-DNOKOGIRI_LIBXML2_PATCHES=\"\"" "-DNOKOGIRI_LIBXSLT_PATH=\"/Users/qiu/workspace/qiu.jp/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.7.0.1/ports/x86_64-apple-darwin16.4.0/libxslt/1.1.29\"" "-DNOKOGIRI_LIBXSLT_PATCHES=\"\""
-CXXFLAGS = $(CCDLFLAGS) $(cxxflags) $(ARCH_FLAG)
-ldflags  = -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib  -fstack-protector
+CPPFLAGS = -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -I/Users/qiushi/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags)
+CXXFLAGS = $(CCDLFLAGS) $(cxxflags)    $(ARCH_FLAG)
+ldflags  = -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib  -fstack-protector -L/usr/local/Cellar/libxml2/2.9.4_3/lib -L/usr/local/Cellar/libxslt/1.1.29/lib -L/usr/local/Cellar/libxml2/2.9.4/lib -L/usr/local/Cellar/libxml2/2.9.4_3/lib -L/usr/local/Cellar/libxslt/1.1.29/lib -L/usr/local/Cellar/libxml2/2.9.4/lib -L/usr/local/Cellar/libxml2/2.9.4_3/lib
 dldflags = -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress 
 ARCH_FLAG = 
 DLDFLAGS = $(ldflags) $(dldflags) $(ARCH_FLAG)
@@ -121,8 +121,8 @@ TOUCH = exit >
 
 preload = 
 
-libpath = /Users/qiu/workspace/qiu.jp/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.7.0.1/ports/x86_64-apple-darwin16.4.0/libxml2/2.9.4/lib /Users/qiu/workspace/qiu.jp/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.7.0.1/ports/x86_64-apple-darwin16.4.0/libxslt/1.1.29/lib . $(libdir)
-LIBPATH =  -L/Users/qiu/workspace/qiu.jp/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.7.0.1/ports/x86_64-apple-darwin16.4.0/libxml2/2.9.4/lib -L/Users/qiu/workspace/qiu.jp/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.7.0.1/ports/x86_64-apple-darwin16.4.0/libxslt/1.1.29/lib -L. -L$(libdir)
+libpath = . $(libdir)
+LIBPATH =  -L. -L$(libdir)
 DEFFILE = 
 
 CLEANFILES = mkmf.log
@@ -133,7 +133,7 @@ extout =
 extout_prefix = 
 target_prefix = /nokogiri
 LOCAL_LIBS = 
-LIBS =  /Users/qiu/workspace/qiu.jp/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.7.0.1/ports/x86_64-apple-darwin16.4.0/libxslt/1.1.29/lib/libexslt.a -lm -liconv -lpthread -lz /Users/qiu/workspace/qiu.jp/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.7.0.1/ports/x86_64-apple-darwin16.4.0/libxml2/2.9.4/lib/libxml2.a /Users/qiu/workspace/qiu.jp/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.7.0.1/ports/x86_64-apple-darwin16.4.0/libxslt/1.1.29/lib/libxslt.a -lm -liconv -lpthread -lz /Users/qiu/workspace/qiu.jp/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.7.0.1/ports/x86_64-apple-darwin16.4.0/libxml2/2.9.4/lib/libxml2.a -llzma -lpthread -ldl -lobjc  
+LIBS =   -lxml2 -lxslt -lxml2 -lz -lpthread -liconv -lm -lxml2 -lexslt -lxslt -lxml2 -lz -lpthread -liconv -lm -lxml2 -lpthread -ldl -lobjc  
 ORIG_SRCS = html_document.c html_element_description.c html_entity_lookup.c html_sax_parser_context.c html_sax_push_parser.c nokogiri.c xml_attr.c xml_attribute_decl.c xml_cdata.c xml_comment.c xml_document.c xml_document_fragment.c xml_dtd.c xml_element_content.c xml_element_decl.c xml_encoding_handler.c xml_entity_decl.c xml_entity_reference.c xml_io.c xml_libxml2_hacks.c xml_namespace.c xml_node.c xml_node_set.c xml_processing_instruction.c xml_reader.c xml_relax_ng.c xml_sax_parser.c xml_sax_parser_context.c xml_sax_push_parser.c xml_schema.c xml_syntax_error.c xml_text.c xml_xpath_context.c xslt_stylesheet.c
 SRCS = $(ORIG_SRCS) 
 OBJS = html_document.o html_element_description.o html_entity_lookup.o html_sax_parser_context.o html_sax_push_parser.o nokogiri.o xml_attr.o xml_attribute_decl.o xml_cdata.o xml_comment.o xml_document.o xml_document_fragment.o xml_dtd.o xml_element_content.o xml_element_decl.o xml_encoding_handler.o xml_entity_decl.o xml_entity_reference.o xml_io.o xml_libxml2_hacks.o xml_namespace.o xml_node.o xml_node_set.o xml_processing_instruction.o xml_reader.o xml_relax_ng.o xml_sax_parser.o xml_sax_parser_context.o xml_sax_push_parser.o xml_schema.o xml_syntax_error.o xml_text.o xml_xpath_context.o xslt_stylesheet.o
@@ -619,4 +619,4 @@ xslt_stylesheet.o: xslt_stylesheet.c xslt_stylesheet.h nokogiri.h	\
 all: clean-ports
 
 clean-ports: $(DLLIB)
-	-$(Q)$(RUBY) $(srcdir)/extconf.rb --clean --enable-static
+	-$(Q)$(RUBY) $(srcdir)/extconf.rb --clean --disable-static

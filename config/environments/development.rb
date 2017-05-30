@@ -1,4 +1,14 @@
 Rails.application.configure do
+  # qiu's edit.
+  # config.assets.compile = true
+  # Do not compress assets
+  # config.assets.compress = false
+  # Expands the lines which load the assets
+  # config.assets.debug = true
+  # config.assets.digest = false
+  # config.assets.enabled = false
+  # *********************************
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on

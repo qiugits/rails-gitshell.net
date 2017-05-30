@@ -1,6 +1,6 @@
 have_func: checking for mmap() in sys/mman.h... -------------------- yes
 
-"clang -o conftest -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiu/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+"clang -o conftest -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiushi/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -11,7 +11,7 @@ checked program was:
 6: }
 /* end */
 
-"clang -o conftest -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiu/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+"clang -o conftest -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiushi/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -35,7 +35,7 @@ checked program was:
 
 have_func: checking for munmap() in sys/mman.h... -------------------- yes
 
-"clang -o conftest -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiu/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+"clang -o conftest -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiushi/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -59,7 +59,7 @@ checked program was:
 
 have_func: checking for mremap() in sys/mman.h... -------------------- no
 
-"clang -o conftest -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiu/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+"clang -o conftest -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiushi/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
 conftest.c:15:57: error: use of undeclared identifier 'mremap'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))mremap; return 0; }
                                                         ^
@@ -83,14 +83,14 @@ checked program was:
 15: int t(void) { void ((*volatile p)()); p = (void ((*)()))mremap; return 0; }
 /* end */
 
-"clang -o conftest -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiu/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+"clang -o conftest -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiushi/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
 conftest.c:15:15: warning: implicit declaration of function 'mremap' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { mremap(); return 0; }
               ^
 1 warning generated.
 Undefined symbols for architecture x86_64:
   "_mremap", referenced from:
-      _t in conftest-cd9578.o
+      _t in conftest-e37206.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
@@ -116,7 +116,7 @@ checked program was:
 
 have_header: checking for linux/tcp.h... -------------------- no
 
-"clang -E -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiu/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE   -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
+"clang -E -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiushi/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE   -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
 conftest.c:3:10: fatal error: 'linux/tcp.h' file not found
 #include <linux/tcp.h>
          ^
@@ -132,7 +132,7 @@ checked program was:
 
 have_func: checking for getpagesize() in unistd.h... -------------------- yes
 
-"clang -o conftest -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiu/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE  -D_BSD_SOURCE   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+"clang -o conftest -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiushi/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE  -D_BSD_SOURCE   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -156,7 +156,7 @@ checked program was:
 
 have_func: checking for rb_thread_blocking_region()... -------------------- no
 
-"clang -o conftest -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiu/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE  -D_BSD_SOURCE   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+"clang -o conftest -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiushi/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE  -D_BSD_SOURCE   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'rb_thread_blocking_region'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_blocking_region; return 0; }
                                                         ^
@@ -178,14 +178,14 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_blocking_region; return 0; }
 /* end */
 
-"clang -o conftest -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiu/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE  -D_BSD_SOURCE   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+"clang -o conftest -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiushi/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE  -D_BSD_SOURCE   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'rb_thread_blocking_region' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { rb_thread_blocking_region(); return 0; }
               ^
 1 warning generated.
 Undefined symbols for architecture x86_64:
   "_rb_thread_blocking_region", referenced from:
-      _t in conftest-8f89a8.o
+      _t in conftest-ee7162.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
@@ -209,7 +209,7 @@ checked program was:
 
 have_func: checking for rb_thread_io_blocking_region()... -------------------- yes
 
-"clang -o conftest -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiu/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE  -D_BSD_SOURCE   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+"clang -o conftest -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiushi/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE  -D_BSD_SOURCE   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'rb_thread_io_blocking_region'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_io_blocking_region; return 0; }
                                                         ^
@@ -231,7 +231,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_io_blocking_region; return 0; }
 /* end */
 
-"clang -o conftest -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiu/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE  -D_BSD_SOURCE   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+"clang -o conftest -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiushi/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE  -D_BSD_SOURCE   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
 conftest.c:13:15: warning: implicit declaration of function 'rb_thread_io_blocking_region' is invalid in C99 [-Wimplicit-function-declaration]
 int t(void) { rb_thread_io_blocking_region(); return 0; }
               ^
@@ -257,7 +257,7 @@ checked program was:
 
 checking for GCC 4+ atomic builtins... -------------------- yes
 
-"clang -o conftest -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiu/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE  -D_BSD_SOURCE   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+"clang -o conftest -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiushi/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE  -D_BSD_SOURCE   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
  1: #include "ruby.h"

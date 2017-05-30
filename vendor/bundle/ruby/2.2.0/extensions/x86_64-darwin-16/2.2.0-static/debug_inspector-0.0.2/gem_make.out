@@ -1,4 +1,4 @@
-/Users/qiu/.rbenv/versions/2.2.3/bin/ruby -r ./siteconf20170219-72506-tfcyua.rb extconf.rb 
+/Users/qiushi/.rbenv/versions/2.2.3/bin/ruby -r ./siteconf20170530-4439-1ettpxg.rb extconf.rb
 creating Makefile
 
 make "DESTDIR=" clean
@@ -8,4 +8,4 @@ compiling debug_inspector.c
 linking shared-object debug_inspector.bundle
 
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20170219-72506-17w248y
+/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20170530-4439-fpldua

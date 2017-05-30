@@ -1,6 +1,6 @@
 have_macro: checking for SIZEOF_OFF_T in ruby.h... -------------------- yes
 
-"clang -o conftest -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiu/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+"clang -o conftest -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiushi/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -11,7 +11,7 @@ checked program was:
 6: }
 /* end */
 
-"clang -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiu/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
+"clang -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiushi/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -28,7 +28,7 @@ checked program was:
 
 have_macro: checking for SIZEOF_SIZE_T in ruby.h... -------------------- yes
 
-"clang -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiu/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
+"clang -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiushi/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -45,7 +45,7 @@ checked program was:
 
 have_macro: checking for SIZEOF_LONG in ruby.h... -------------------- yes
 
-"clang -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiu/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
+"clang -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiushi/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -62,7 +62,7 @@ checked program was:
 
 have_func: checking for rb_str_set_len() in ruby.h... -------------------- yes
 
-"clang -o conftest -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiu/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+"clang -o conftest -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiushi/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -86,7 +86,7 @@ checked program was:
 
 have_func: checking for rb_hash_clear() in ruby.h... -------------------- yes
 
-"clang -o conftest -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiu/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+"clang -o conftest -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiushi/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -110,7 +110,7 @@ checked program was:
 
 have_func: checking for gmtime_r() in time.h... -------------------- yes
 
-"clang -o conftest -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiu/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiu/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib -L. -L/Users/qiu/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+"clang -o conftest -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/x86_64-darwin16 -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0/ruby/backward -I/Users/qiushi/.rbenv/versions/2.2.3/include/ruby-2.2.0 -I. -I/Users/qiushi/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib -L. -L/Users/qiushi/.rbenv/versions/2.2.3/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
  1: #include "ruby.h"
