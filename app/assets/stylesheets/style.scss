@@ -4,7 +4,7 @@ $col_main: #cccccc;
 $col_highlight: #f2b43b;
 $col_background: #292929;
 $col_dark: #191919;
-$font_basic: 125%;
+$font_basic: 150%;
 $footer_height: 4rem;
 $header_height: 4rem;
 $maple_size: $header_height / 1.5;
@@ -155,8 +155,8 @@ a:hover,a:active {
 }
 #acMenu dd{
     color: $col_main;
-    width:32rem;
-    height:1.2rem;
+    width:10rem;
+    height:1rem;
     line-height:2rem;
     text-align:right;
     margin-top: 1rem;
@@ -166,23 +166,32 @@ a:hover,a:active {
     display:none;
     // margin: 0;
 }
-img#Upper{
-  // background-image: url('Maple_Upper.png');
+// img{
+//   /* disable saving img w/smartphone */
+//   touch-callout:none;
+//   user-select:none;
+//   /* w/pc */
+//   pointer-events: none;
+// }
+div#Upper {
   width: $maple_size;
   height: $maple_size;
+  margin-bottom: -$maple_size/2;
+  background-image: url("Maple_Upper.png");
+  background-size: $maple_size;//入りきるように
+  background-repeat: no-repeat; //繰り返さない
+  background-position: top;
+
+  z-index: -1; //下層へ。
 }
-img#Lower{
-  // background-image: url('Maple_Lower.png');
+div#Lower {
   width: $maple_size;
   height: $maple_size;
-  margin-top: -$maple_size / 2;
-  /*padding-top: -32px;*/
-  // z-index: -2;
-}
-img{
-  /* disable saving img w/smartphone */
-  touch-callout:none;
-  user-select:none;
-  /* w/pc */
-  pointer-events: none;
+  margin-top: -$maple_size/2;
+  background-image: url("Maple_Lower.png");
+  background-size: $maple_size;//入りきるように
+  background-repeat: no-repeat; //繰り返さない
+  background-position: top;
+
+  z-index: -1; //下層へ。
 }
