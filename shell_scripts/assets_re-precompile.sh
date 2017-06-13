@@ -1,4 +1,4 @@
 #!/bin/sh
 eval 'rake assets:clobber'
 eval 'rake assets:precompile RAILS_ENV=production'
-. 'production_server.sh'
+. 'shell_script/production_server.sh'
