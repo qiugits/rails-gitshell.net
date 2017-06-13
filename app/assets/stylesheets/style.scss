@@ -1,40 +1,96 @@
-/* 変数 */
-
+// ********************
+// ***   variables  ***
+// ********************
+// +-------------------------+
+// |     color variables     |
+// +-------------------------+
 $col_main: #cccccc;
-$col_highlight: #f2b43b;
+$col_bright: #ffffff;
+$col_colored: #f2b43b;
 $col_background: #292929;
 $col_dark: #191919;
+// +------------------------+
+// |     size variables     |
+// +------------------------+
 $font_basic: 150%;
 $footer_height: 4rem;
-$header_height: 4rem;
-$maple_size: $header_height / 1.5;
+$header_height: 3rem;
+$maple_size: $header_height * 0.9;
 
+// *****************
+// ***   fonts   ***
+// *****************
+@font-face {
+  font-family: 'Brandon-R';
+  // src: font-url('Brandon_reg.otf');
+  src:url('Brandon_reg.otf');
+  src: url('fonts/Brandon_reg.otf') format('opentype');
+}
+@font-face {
+  font-family: 'HiraginoSans-R';
+  src: url('fonts/HiraginoSans-W4.ttc') format('truetype');
+}
+@font-face {
+    font-family: 'brandon_grotesque_regularRg';
+    src: font-url('brandon_reg-webfont.eot');
+    src: font-url('brandon_reg-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('brandon_reg-webfont.woff2') format('woff2'),
+         font-url('brandon_reg-webfont.woff') format('woff'),
+         font-url('brandon_reg-webfont.ttf') format('truetype'),
+         font-url('brandon_reg-webfont.svg#brandon_grotesque_regularRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body, p {
+  font-family:
+    HiraginoSans-W4, //Regular
+    verdana, arial, helvetica, sans-serif; //If fails, use default fonts.
+}
+b {
+  font-family:
+    HiraginoSans-W6, //Bold
+    verdana, arial, helvetica, sans-serif;
+}
+.eng-font, dd {
+  font-family:
+    'brandon_grotesque_regularRg',
+    BrandonGrotesque-Regular,
+    AvenirNext-Regular,
+    verdana, arial, helvetica, sans-serif;
+}
+// ******************
+// ***   letter   ***
+// ******************
+a {
+  text-decoration: none; //リンク文字列のアンダーラインなし
+  color: $col_main;
+}
+a:hover,a:active {
+  color: $col_bright;
+}
 
+// *******************
+// ***   general   ***
+// *******************
 html {
-  font-family:  //assets/fontsに入れていないので、端末依存かな。
-                avenir next,
-                avenir,
-                //scaffoldを丸パクリ。
-                verdana,
-                arial,
-                helvetica,
-                sans-serif;
-  //font-size: $font_basic;
-  font-size: calc(100% + 0.5vmax);
+  // Always Mobile first.
+  font-size: $font_basic;
+  // font-size: calc(100% + 1vmax);
   -webkit-text-size-adjust: 100%;
 
   background-color: $col_background;
   color: $col_main;
 
-  // for iPhone.
-  @media (max-width: 1126px) {
-    //font-size: calc(2 * $font_basic);
-    font-size: calc(150% + 1vmax);
-    // color: blue;
+  // for Desktop
+  @media (min-width: 768px) {
+    // font-size: calc(100% + 0.5vmax);
+    font-size: $font_basic;
   }
 }
-// body {}
-// img {}
+body {
+  padding: 0;
+  margin: 0;
+}
 div#fox {
   width: 5rem;
   height: 10rem;
@@ -42,138 +98,63 @@ div#fox {
   background-size: contain; //入りきるように
   background-repeat: no-repeat; //繰り返さない
   background-position: center;
-
-  // //上下左右中央にする
-  // position: absolute; //absolute <-> fixed
-  // top: 0;
-  // bottom: 0;
-  // left: 0;
-  // right: 0;
-  margin: auto; //左右中央にする | http://stackoverflow.com/questions/7055393/center-image-using-text-align-center
-
+  margin: auto; //左右中央にする
   //pointer-events: none; //右クリック禁止して画像コピーできなくする
   z-index: -1; //下層へ。
 }
 
 .text_box{
-  width: 80%;
-  height: 70%;
   position: absolute; //absolute(スクロール可能) <-> fixed(スクロール不可)
-  top: 0;
+  top: $header_height;
   bottom: 0;
   left: 0;
   right: 0;
-  margin: auto;
-  display: table;
+  margin: 0;
 }
 .text_box > div{
-  display: table-cell;
+  // display: table-cell;
   // vertical-align: middle;
-  top: 10rem;
+  // top: 10rem;
   text-align: center;
-}
-
-
-.footer {
-  width: 100%;
-  height: $footer_height;
-  //Safari,ChromeにはWebkitで、Firefoxにはmoz、それ以外にはグラデーションなしを表示する
-  background: rgba($col_dark,0.8); //? background-color?
-  background: -moz-linear-gradient(top,
-                                    rgba($col_dark,0.85),
-                                    rgba($col_dark - #080808,0.95));
-  background: -webkit-gradient(linear,left top,left bottom,
-                                    from(rgba($col_dark,0.85)),
-                                    to(rgba($col_dark - #080808,0.95)));
-  left: 0;
-  bottom: 0;
-  position: fixed; //absoluteだと読み込み時の画面にしたがって完全固定だが、fixedならスクロールに対応する
-}
-.footer ul {
-  line-height: $footer_height;
-  list-style-type: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-.footer ul.pull-left {
-  float: left !important;
-  margin-left: 1rem;
-}
-.footer ul.pull-right {
-  float: right !important;
-  margin-right: 1rem;
-}
-// https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11120240036
-.footer ul.pull-center {
-  // float: center !important;
-  margin: auto;
-  // margin-right: 1rem;
-}
-.footer a.button_img {
-  display: flex; //これがないと<a>ではちゃんと表示されない。inline-blockでもうまくいった。
-  background-size: contain;
-  height: ($footer_height * 1 / 2);
-  width: ($footer_height * 1 / 2);
-  margin: ($footer_height * 1 / 4);
-  cursor: pointer;
-}
-.footer a.button_txt {
-  margin-left: 1.5rem;
-}
-// 文字
-a {
-  text-decoration: none; //リンク文字列のアンダーラインなし
-  color: $col_main;
-}
-a:hover,a:active {
-  color: $col_highlight;
 }
 
 // ******************
 // ***   HEADER   ***
 // ******************
 .header{
-  position: absolute;
-  height: $header_height;
-  width: 99%;
-  z-index: 1;
+  position: fixed;
   margin: 0;
+  height: $header_height;
+  width: 100%;
+  z-index: 1;
 }
-#acMenu{
+#mplAcMenu{
   float: right;
   margin: 0;
   margin-right: 0.5rem;
 }
 /* slideToggle */
-#acMenu dt{
-    display:block;
-    margin-left: auto;
-    width:$maple_size;
-    height:$maple_size/2;
-    cursor:pointer;
+#mplAcMenu dt{
+  display:block;
+  margin-left: auto;
+  width:$maple_size;
+  height:$maple_size/2;
+  cursor:pointer;
 }
-#acMenu dd{
-    color: $col_main;
-    width:10rem;
-    height:1rem;
-    line-height:2rem;
-    text-align:right;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: auto;
-    padding-right: 1rem;
-    display:none;
-    // margin: 0;
+#mplAcMenu dd{
+  color: $col_main;
+  width:10rem;
+  height:1.1rem;
+  // line-height:20rem;
+  text-align:right;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  padding-right: 1rem;
+  display:none; // Hide until slideToggled.
+  // margin: 0;
 }
-// img{
-//   /* disable saving img w/smartphone */
-//   touch-callout:none;
-//   user-select:none;
-//   /* w/pc */
-//   pointer-events: none;
-// }
-div#Upper {
+div#mplUpper {
   width: $maple_size;
   height: $maple_size;
   margin-bottom: -$maple_size/2;
@@ -184,7 +165,7 @@ div#Upper {
 
   z-index: -1; //下層へ。
 }
-div#Lower {
+div#mplLower {
   width: $maple_size;
   height: $maple_size;
   margin-top: -$maple_size/2;

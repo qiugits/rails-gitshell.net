@@ -6,7 +6,7 @@ Rails.application.configure do
   # Expands the lines which load the assets
   # config.assets.debug = true
   # config.assets.digest = false
-  # config.assets.enabled = false
+  config.assets.enabled = false
   # *********************************
 
   # Settings specified here will take precedence over those in config/application.rb.

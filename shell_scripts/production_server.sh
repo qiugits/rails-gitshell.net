@@ -1,6 +1,4 @@
 #!/bin/sh
-#cd /Users/qiu/workspace/qiu.jp
-pwd
 echo "////////////////////////////////////////"
 echo " * restart unicorn.rb"
 echo "  - stop unicorn"
