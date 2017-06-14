@@ -7,7 +7,7 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.paths << Emoji.images_path
 
 # Qiu's edit.
-# Rails.application.config.assets_path << Rails.root.join('app', 'assets', 'fonts')
+# Rails.application.config.assets_path << Rails.root.join('app', 'assets', 'fonts') # never use this. it will end up with terrible error.
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.

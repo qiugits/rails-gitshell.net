@@ -1,6 +1,7 @@
 #Unicornのログ出力先を指定
 #File.expand_pathはパスを絶対パスに解決するメソッド File.expand_path: https://ruby-doc.org/core-2.2.0/File.html#method-c-expand_path
-rails_root = File.expand_path('../../', __FILE__) #=> "/Users/qiu/workspace/qiu.jp"
+rails_root = File.expand_path('../../', __FILE__) #=> "/Users/qiu/workspace/qiu.jp" "/Users/qiushi/workspace"
+# print rails_root #=> "/Users/qiushi/workspace/gitshell.net"
 #ワーカー数を指定する
 worker_processes 2
 working_directory rails_root

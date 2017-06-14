@@ -1,10 +1,10 @@
 #!/bin/sh
-#cd /Users/qiu/workspace/qiu.jp
+#cd /Users/qiushi/workspace/gitshell.net
 pwd
 echo "////////////////////////////////////////"
 echo " * restart unicorn.rb"
 echo "  - stop unicorn"
-kill -QUIT `cat ~/workspace/qiu.jp/tmp/pids/unicorn.pid`
+kill -QUIT `cat ~/workspace/gitshell.net/tmp/pids/unicorn.pid`
 echo "  - start unicorn as daemon"
 echo "   *__development__*"
 bundle exec unicorn_rails -c ~/workspace/gitshell.net/config/unicorn_development.rb -E development -D
