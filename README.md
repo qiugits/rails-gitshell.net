@@ -1,5 +1,9 @@
 # README
 
+Webサイトのアーカイブ。
+Rails5で作成。
+結局HTTPとCSSくらいしか弄っていない。
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
